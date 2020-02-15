@@ -1,0 +1,47 @@
+// Color Variables
+$color-heading: #3A3A3A;
+$color-paragraph: #474747;
+$color-link: #555;
+
+$color-highlight-primary: #787ddb;
+$color-highlight-secondary: #f4e2ff;
+
+// Font Variables
+$font-primary: 'Roboto', sans-serif;
+
+
+// Responsive Breakpoints
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+ box-sizing: border-box;
+ font-size: 62.5%; // 10px /16px -> 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-paragraph;
+    font-weight: 400;
+    line-height: 1.6;
+
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 10vh 90vh min-content repeat(3, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+
+}
+
+
+// Notes
+// Using min-content will provide just the right amount of space for specified rows
+// This page site uses 8 grid comlumns, with each column having a max size of 14rem, and a minimum size of min-content

@@ -1,3 +1,53 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #474747;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 10vh 90vh min-content repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end]; }
+
 .header {
-  background-color: 0;
-  font-size: 24px; }
+  grid-column: center-start / center-end;
+  grid-row: 1;
+  display: grid; }
+
+.logo {
+  background: green;
+  padding: 2rem; }
+
+.nav {
+  background-color: blue; }
+
+.about {
+  grid-column: center-start / center-end;
+  grid-row: 2; }
+
+.skills {
+  grid-column: center-start / center-end;
+  grid-row: 3; }
+
+.portfolio {
+  grid-column: center-start / center-end;
+  grid-row: 4; }
+
+.contact {
+  grid-column: center-start / center-end;
+  grid-row: 5; }
+
+.footer {
+  grid-column: center-start / center-end;
+  grid-row: 6; }
