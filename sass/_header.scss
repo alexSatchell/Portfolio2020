@@ -2,13 +2,31 @@
     grid-column: center-start / center-end;
     grid-row: 1;
 
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 
-    &__logo {
-        background-color: blue;
+    &__logo { 
+
     }
 
     &__nav {
-        background-color: red;
+
+        
+        &__list {
+            display: flex;
+
+            &--element {
+                margin-left: 6rem;
+                list-style: none;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-highlight-primary;
+                }
+            }
+        }
     }
 }

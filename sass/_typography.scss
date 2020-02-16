@@ -1,1 +1,52 @@
-// Color Variables
+// Sass extends
+%heading {
+  font-family: $font-primary;
+  font-weight: 400;
+  color:#3A3A3A;
+}
+
+%paragraph {
+    font-size: 1.7em;
+    color: $color-paragraph;
+}
+
+.heading-1 {
+  @extend %heading;
+    font-size: 4.2rem;
+    font-weight: 500;
+}
+
+.heading-2 {
+  @extend %heading;
+}
+
+.heading-3 {
+  @extend %heading;
+}
+
+.heading-4 {
+  @extend %heading;
+}
+
+.about__content__paragraph{
+
+    &--1 {
+        @extend %paragraph;
+    }
+
+    &--2 {
+        @extend %paragraph;
+    }
+
+    &--3 {
+        @extend %paragraph;
+    }
+}
+
+#logo {
+    font-size: 1.5rem;
+}
+
+li {
+    font-size: 1.5rem;
+}
