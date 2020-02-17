@@ -2,22 +2,42 @@
 %heading {
   font-family: $font-primary;
   font-weight: 400;
-  color:#3A3A3A;
+  color: $color-heading;
 }
 
 %paragraph {
     font-size: 1.8rem;
     color: $color-paragraph;
+
+    @media only screen and (max-width: $bp-medium) {
+
+    }
+
 }
 
 .heading-1 {
   @extend %heading;
-    font-size: 4.2rem;
+    font-size: 4.7rem;
     font-weight: 500;
+
+  @media only screen and (max-width: $bp-largest) {
+      font-size: 4.3rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 3.6rem;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  font-size: 3.2rem;
+}
+
 }
 
 .heading-2 {
   @extend %heading;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 .heading-3 {
@@ -41,6 +61,27 @@
     &--3 {
         @extend %paragraph;
     }
+}
+
+.skills--paragraph {
+  @extend %paragraph;
+}
+
+.course__link {
+
+
+  a {
+    text-decoration: none;
+    color: $color-paragraph;
+    font-weight: 500;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: $color-highlight-primary;
+    }
+
+  }
+
 }
 
 #logo {

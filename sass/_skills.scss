@@ -1,4 +1,36 @@
 .skills {
     grid-column: center-start / center-end;
     grid-row: 3;
+    // border: 1px dotted black;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3vh;
+
+    &__header {
+        grid-row: 1;
+        // border: 1px dotted blue;
+    }
+
+    &__container {
+        grid-row: 2;
+        // border: 1px dotted green;
+
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+
+        @media only screen and (max-width: $){
+            
+        }
+
+        &--skill {
+            // border: 1px solid orangered;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    }
 }
