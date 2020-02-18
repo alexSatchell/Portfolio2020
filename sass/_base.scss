@@ -1,5 +1,5 @@
 // Color Variables
-$color-heading: #3A3A3A;
+$color-heading: #3a3a3a;
 $color-paragraph: #474747;
 $color-link: #555;
 
@@ -9,63 +9,67 @@ $color-highlight-secondary: #e5bcff;
 $color-highlight-yellow: #ffc456;
 
 // Font Variables
-$font-primary: 'Roboto', sans-serif;
-
+$font-primary: "Roboto", sans-serif;
 
 // Responsive Breakpoints
-$bp-largest: 75em;   // 1200px
-$bp-large: 65.625em;   // 1050px
-$bp-medium: 55.321em;    // 885px;
-$bp-small: 42.81em;    // 685px;
+$bp-largest: 75em; // 1200px
+$bp-large: 65.625em; // 1050px
+$bp-medium: 55.321em; // 885px;
+$bp-small: 42.81em; // 685px;
 
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-
 html {
- box-sizing: border-box;
- font-size: 62.5%; // 10px /16px -> 1rem = 10px
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px /16px -> 1rem = 10px
 
- @media only screen and (max-width: $bp-largest) {
-     font-size: 55%;
-    }
-
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 55%;
+  }
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-paragraph;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: $font-primary;
+  color: $color-paragraph;
+  font-weight: 400;
+  line-height: 1.6;
 
-    @media only screen and (max-width: $bp-large) {
-        padding: 5vw;
-    }
-
+  @media only screen and (max-width: $bp-large) {
+    padding: 5vw;
+  }
 }
 
 .container {
-    display: grid;
-    grid-row-gap: 5vh;
-    grid-template-rows: 5vh 90vh min-content repeat(3, min-content);
-    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+  display: grid;
+  grid-row-gap: 5vh;
+  grid-template-rows: 5vh 90vh min-content repeat(3, min-content);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 15rem) [col-end]
+    ) [center-end] 1fr [full-end];
 
-    @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-large) {
     grid-template-rows: 5vh 90vh min-content repeat(3, min-content);
-    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
-    }
+    grid-template-columns: [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 15rem) [col-end]
+      ) [center-end] 1fr [full-end];
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 5vh 1fr min-content repeat(3, min-content);
-        grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
-    }
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: 5vh 1fr min-content repeat(3, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(
+        8,
+        [col-start] minmax(min-content, 15rem) [col-end]
+      ) [center-end] 1fr [full-end];
+  }
 }
-
 
 // Notes
 // Using min-content will provide just the right amount of space for specified rows

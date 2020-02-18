@@ -6,32 +6,29 @@
 }
 
 %paragraph {
-    font-size: 1.8rem;
-    color: $color-paragraph;
+  font-size: 1.8rem;
+  color: $color-paragraph;
 
-    @media only screen and (max-width: $bp-medium) {
-
-    }
-
+  @media only screen and (max-width: $bp-medium) {
+  }
 }
 
 .heading-1 {
   @extend %heading;
-    font-size: 4.7rem;
-    font-weight: 500;
+  font-size: 4.7rem;
+  font-weight: 500;
 
   @media only screen and (max-width: $bp-largest) {
-      font-size: 4.3rem;
+    font-size: 4.3rem;
   }
 
   @media only screen and (max-width: $bp-large) {
     font-size: 3.6rem;
-}
+  }
 
-@media only screen and (max-width: $bp-medium) {
-  font-size: 3.2rem;
-}
-
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-2 {
@@ -48,46 +45,44 @@
   @extend %heading;
 }
 
-.about__content__paragraph{
+.about__content__paragraph {
+  &--1 {
+    @extend %paragraph;
+  }
 
-    &--1 {
-        @extend %paragraph;
-    }
+  &--2 {
+    @extend %paragraph;
+  }
 
-    &--2 {
-        @extend %paragraph;
-    }
-
-    &--3 {
-        @extend %paragraph;
-    }
+  &--3 {
+    @extend %paragraph;
+  }
 }
 
 .skills--paragraph {
   @extend %paragraph;
 }
 
+.paragraph {
+  @extend %paragraph;
+}
 .course__link {
-
-
   a {
     text-decoration: none;
     color: $color-paragraph;
     font-weight: 500;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
       color: $color-highlight-primary;
     }
-
   }
-
 }
 
 #logo {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 li {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }

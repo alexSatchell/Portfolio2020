@@ -38,9 +38,9 @@ body {
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #3A3A3A; }
+  color: #3a3a3a; }
 
-.about__content__paragraph--1, .about__content__paragraph--2, .about__content__paragraph--3, .skills--paragraph {
+.about__content__paragraph--1, .about__content__paragraph--2, .about__content__paragraph--3, .skills--paragraph, .paragraph {
   font-size: 1.8rem;
   color: #474747; }
 
@@ -65,7 +65,7 @@ body {
   text-decoration: none;
   color: #474747;
   font-weight: 500;
-  transition: .2s ease-in-out; }
+  transition: 0.2s ease-in-out; }
   .course__link a:hover {
     color: #575edb; }
 
@@ -186,6 +186,10 @@ li {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(4, 1fr); }
+    @media only screen and (max-width: 42.81em) {
+      .skills__container {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr); } }
     .skills__container--skill {
       display: flex;
       justify-content: center;
@@ -193,7 +197,15 @@ li {
 
 .portfolio {
   grid-column: center-start / center-end;
-  grid-row: 4; }
+  grid-row: 4;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); }
+  .portfolio__header {
+    grid-row: 1; }
+  .portfolio__projects {
+    grid-row: 2; }
+  .portfolio__mini-projects {
+    grid-row: 3; }
 
 .contact {
   grid-column: center-start / center-end;

@@ -1,4 +1,20 @@
 .portfolio {
     grid-column: center-start / center-end;
     grid-row: 4;
+
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    &__header {
+        grid-row: 1;
+    }
+
+    &__projects {
+        grid-row: 2;
+    }
+
+    &__mini-projects {
+        grid-row: 3;
+    }
+
 }
