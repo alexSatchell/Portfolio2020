@@ -20,7 +20,7 @@ body {
   align-items: center;
 }
 
-#music-container {
+#container {
   display: grid;
   grid-template-rows: 20px 200px 200px 20px;
   grid-template-columns: 225px 225px;

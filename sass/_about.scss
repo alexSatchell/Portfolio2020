@@ -7,15 +7,12 @@
     grid-template-rows: repeat(2, 45vh);
 
     @media only screen and (max-width: $bp-large) {
-        grid-template-rows: 30vh 60vh;
+        grid-template-rows: 30vh min-content;
     }
 
     @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 30vh 
+        grid-template-rows: 20vh min-content
     }
-
-    // border: 1px solid black;
-    
 
 
     &__bio {
@@ -34,7 +31,6 @@
 
             &--welcome {
                 margin: auto 0;
-                // border: 1px solid blueviolet;
             }
         }
 
@@ -85,7 +81,7 @@
 
 
     &__content {
-        max-height: 45vh;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -119,6 +115,7 @@
 
         @media only screen and (max-width: $bp-small) {
             max-height: none;
+            padding: 5rem 2rem;
         }
     }
 }
