@@ -34,7 +34,7 @@ html {
   }
 
   @media only screen and (max-width: $bp-small) {
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 
@@ -52,7 +52,7 @@ body {
 .container {
   display: grid;
   grid-row-gap: 5vh;
-  grid-template-rows: 5vh 90vh repeat(2, min-content)  min-content repeat(2, min-content);
+  grid-template-rows: 5vh minmax(min-content,90vh) repeat(2, min-content)  min-content repeat(2, min-content);
   grid-template-columns: [full-start] 1fr [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
