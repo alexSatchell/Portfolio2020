@@ -48,23 +48,23 @@ body {
 .container {
   display: grid;
   grid-row-gap: 5vh;
-  grid-template-rows: 5vh 90vh min-content repeat(3, min-content);
+  grid-template-rows: 5vh 90vh repeat(2, min-content)  min-content repeat(2, min-content);
   grid-template-columns: [full-start] 1fr [center-start] repeat(
       8,
       [col-start] minmax(min-content, 15rem) [col-end]
     ) [center-end] 1fr [full-end];
 
   @media only screen and (max-width: $bp-large) {
-    grid-template-rows: 5vh 90vh min-content repeat(3, min-content);
-    grid-template-columns: [full-start] 1fr [center-start] repeat(
+    grid-template-rows: 5vh 90vh repeat(2, min-content)  min-content repeat(2, min-content);
+        grid-template-columns: [full-start] 1fr [center-start] repeat(
         8,
         [col-start] minmax(min-content, 15rem) [col-end]
       ) [center-end] 1fr [full-end];
   }
 
   @media only screen and (max-width: $bp-small) {
-    grid-template-rows: 5vh 1fr min-content repeat(3, min-content);
-    grid-template-columns: [full-start] 1fr [center-start] repeat(
+    grid-template-rows: 5vh 1fr repeat(2, min-content)  min-content repeat(2, min-content);
+        grid-template-columns: [full-start] 1fr [center-start] repeat(
         8,
         [col-start] minmax(min-content, 15rem) [col-end]
       ) [center-end] 1fr [full-end];

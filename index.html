@@ -11,19 +11,19 @@
         
         <header class="header">
             <div class="header__logo">
-                <p id="logo">A.S.</p>
+                <p class="logo">A.S.</p>
             </div>
             <nav class="header__nav">
                 <ul class="header__nav__list">
-                    <li class="header__nav__list--element">About</li>
-                    <li class="header__nav__list--element">Portfolio</li>
-                    <li class="header__nav__list--element">Contact</li>
+                    <li class="header__nav__list--element"><a href="#about">About</a></li>
+                    <li class="header__nav__list--element"><a href="#portfolio">Portfolio</a></li>
+                    <li class="header__nav__list--element"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
         </header>
 
-        <div class="about">
+        <div id="about" class="about">
             <div class="about__bio">
                 <div class="about__bio--welcome">
                     <h1 class="heading-1">
@@ -102,7 +102,7 @@
             </div>
         </div>
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <div class="portfolio__header">
                 <h1 class="heading-1">What I've been working on</h1>
                 <p class="paragraph">Outisde of work and studies I try to keep my plate full with something new and exciting to click on, here's a few of my most recent...</p>
@@ -126,7 +126,7 @@
                     <a href="" class="github-portfolio-link"></a>
                 </div>
                 <div class="portfolio__projects--three">
-                    <a href="https://alexsatchell.github.io/Bubmle-Card/index.html" target="blank"><img src="img/portfolio_imgs/bumble.jpg" alt="Coffee Website"></a>
+                    <a href="https://alexsatchell.github.io/Bubmle-Card/" target="blank"><img src="img/portfolio_imgs/bumble.jpg" alt="Coffee Website"></a>
                 </div>
                 <div class="portfolio__projects--three-description">
                     <h3 class="heading-3">Bumble Card</h3>
@@ -138,11 +138,33 @@
             </div>
         </div>
 
-        <div class="contact">contact</div>
+        <div id="contact" class="contact">
+            <h1 class="heading-1">Let's Create Something Together</h1>
+            <p class="skills--paragraph">
+                Feel free to reach out if you are looking for a developer, 
+                <br>
+                would like to collaborate, or wish to chat.
+            </p>
+            <p id="mailto">
+                <a class="email" href="mailto:alexsatchell@live.seminolestate.edu">Email</a>
+            </p>
+        </div>
 
-        <footer class="footer">footer</footer>
+        <div class="gallery">
+            <img src="img/carbon.png" alt="">
+        </div>
+
+        <footer class="footer">
+            <p class="logo">A.S.</p>
+        </footer>
 
     </div>
-
+<script src="index.js"></script>
+<script>
+        function openInNewTab(url) {
+        var win = window.open(url, "_blank");
+        win.focus();
+      }
+</script>
 </body>
 </html>

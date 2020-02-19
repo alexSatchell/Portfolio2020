@@ -5,6 +5,7 @@
     display: grid;
     grid-template-rows: min-content 1fr;
     grid-row-gap: 8vh;
+    margin-bottom: 5vh;
 
     &__header {
         grid-row: 1;
@@ -17,7 +18,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         grid-column-gap: 5vw;
-        grid-row-gap: 5vh;
+        grid-row-gap: 10vh;
 
         @media only screen and (max-width: $bp-small) {
             grid-template-rows: min-content 1fr min-content 1fr min-content 1fr;

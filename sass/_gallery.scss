@@ -1,0 +1,15 @@
+.gallery {
+    grid-row: 6;
+    grid-column: center-start / center-end;
+
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100rem;
+        object-fit: cover;
+        border-radius: 1.5rem;
+    }
+}
