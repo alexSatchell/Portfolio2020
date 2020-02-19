@@ -39,6 +39,8 @@
 
 .heading-3 {
   @extend %heading;
+  font-size: 3.8rem;
+  font-weight: 500;
 }
 
 .heading-4 {
@@ -76,6 +78,17 @@
     &:hover {
       color: $color-highlight-primary;
     }
+  }
+}
+
+.codepen {
+  @extend %paragraph;
+  text-decoration: none;
+  font-weight: 500;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    color: $color-highlight-primary;
   }
 }
 
